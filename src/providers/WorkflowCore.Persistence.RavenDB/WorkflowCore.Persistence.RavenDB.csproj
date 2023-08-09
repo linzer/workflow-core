@@ -1,8 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <AssemblyTitle>Workflow Core RavenDB Persistence Provider</AssemblyTitle>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>WorkflowCore.Persistence.RavenDB</AssemblyName>
     <PackageId>WorkflowCore.Persistence.RavenDB</PackageId>
     <PackageTags>workflow;.NET;Core;state machine;WorkflowCore;RavenDB</PackageTags>
@@ -15,18 +14,10 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <Description>Provides support to persist workflows running on Workflow Core to a RavenDB database.</Description>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="RavenDB.Client" Version="5.1.2" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\WorkflowCore\WorkflowCore.csproj" />
   </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
-    <PackageReference Include="System.Reflection" Version="4.3.0" />
-  </ItemGroup>
-
-
 </Project>

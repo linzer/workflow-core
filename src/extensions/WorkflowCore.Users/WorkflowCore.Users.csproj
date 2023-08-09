@@ -1,9 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <AssemblyTitle>Workflow Core extensions for human workflow</AssemblyTitle>
     <Authors>Daniel Gerlag</Authors>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>WorkflowCore.Users</AssemblyName>
     <PackageId>WorkflowCore.Users</PackageId>
     <PackageTags>workflow;.NET;Core;state machine;WorkflowCore;human;user</PackageTags>
@@ -16,13 +15,10 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <Description>Provides extensions for Workflow Core to enable human workflows.</Description>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\WorkflowCore\WorkflowCore.csproj" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.4" />
   </ItemGroup>
-
 </Project>
