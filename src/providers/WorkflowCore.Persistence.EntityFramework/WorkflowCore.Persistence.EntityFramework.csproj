@@ -21,7 +21,7 @@
     <ProjectReference Include="..\..\WorkflowCore\WorkflowCore.csproj" />
   </ItemGroup>
   <ItemGroup>
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.*" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.21" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
